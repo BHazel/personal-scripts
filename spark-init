@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+# Initialise Apache Spark.
+export APACHE_SPARK_PATH=~/Applications/Apache-Spark-3.0.1
+export HADOOP_HOME=$APACHE_SPARK_PATH
+export SPARK_HOME=$APACHE_SPARK_PATH
+export PATH="$SPARK_HOME/bin:$PATH"
+
+# Configure Java 11 and Scala 2.12.
+export JAVA_HOME=/opt/homebrew/opt/openjdk@11
+export PATH="/opt/homebrew/opt/scala@2.12/bin:$PATH"

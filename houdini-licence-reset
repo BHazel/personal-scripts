@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+# Resets the SideFX Houdini licence server.
+sudo launchctl unload /Library/LaunchDaemons/com.sidefx.sesinetd.plist
+sudo launchctl load -w /Library/LaunchDaemons/com.sidefx.sesinetd.plist
